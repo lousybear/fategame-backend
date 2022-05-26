@@ -27,5 +27,5 @@ app.post("/api/v1/coin", (req, res) => {
 // app.post("/api/v1/");
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`REST End point app listening on port ${port}`);
 });
