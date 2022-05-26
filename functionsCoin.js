@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-const socket = require("./index");
+const socket = require("./server");
 let totalBetHead;
 let totalBetTail;
 let priceOnHead;
@@ -108,7 +108,7 @@ function showResult() {
   //Push winner
   stage = 3;
   jsonn.data = { winner: winner };
-  socket.sendMessage(JSON.stringify(jsonn));
+  socket.getSocket(jsonn);
   console.log(`\n\nWINNER ${winner === "T" ? "Tail" : "Head"} 🥳`);
   console.log(`\n\n 🪙 Total Bet On \nHEAD ${priceOnHead}, REAL_HEAD ${totalBetHead} 🪙🪙 \n
     TAIl ${priceOnTail}, REAL_TAIL ${totalBetTail} 🪙🪙 \n\n

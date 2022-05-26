@@ -29,3 +29,8 @@ app.post("/api/v1/coin", (req, res) => {
 app.listen(port, () => {
   console.log(`REST End point app listening on port ${port}`);
 });
+
+function getSocket(jsonn) {
+  socket.sendMessage(JSON.stringify(jsonn));
+}
+module.exports = { getSocket };
