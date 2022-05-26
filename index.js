@@ -1,4 +1,4 @@
-const webSocketsServerPort = process.env.PORT || 8000;
+const webSocketsServerPort = 8000;
 const webSocketServer = require("websocket").server;
 const http = require("http");
 const { setInterval } = require("timers");
@@ -9,7 +9,7 @@ server.listen(webSocketsServerPort);
 const wsServer = new webSocketServer({
   httpServer: server,
 });
-console.log(`Web Socket started on ${webSocketServer}`);
+console.log(`Web Socket started on ${webSocketsServerPort}`);
 const clients = {};
 
 const getUniqueID = () => {
