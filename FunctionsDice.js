@@ -10,10 +10,10 @@ let gameId;
 let stage;
 let time;
 while(true){
-startGame();
-acceptBetting();
-winnerCalculation();
-showResult();
+    startGame();
+    acceptBetting();
+    winnerCalculation();
+    showResult();
 }
 
 function startGame(){
