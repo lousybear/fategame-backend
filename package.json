@@ -1,7 +1,7 @@
 {
   "name": "fategame-backend",
   "version": "1.0.0",
-  "description": "hello",
+  "description": "hello Ashish",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
