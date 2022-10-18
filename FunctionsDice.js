@@ -10,16 +10,16 @@ let gameId;
 let stage;
 let time;
 while(true){
-startGame();
-acceptBetting();
-winnerCalculation();
-showResult();
+    startGame();
+    acceptBetting();
+    winnerCalculation();
+    showResult();
 }
 
 function startGame(){
     stage = 0;
     bet[1-6] = 0;
-    priceOnBet[1-6] =  getRndInteger(200,45699)*6;
+    priceOnBet[1-6] =  getRndInteger(200,50000)*6;
 }
 function acceptBetting(amt,side,userid){
     stage = 1;
